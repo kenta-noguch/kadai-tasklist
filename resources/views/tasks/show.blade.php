@@ -19,10 +19,10 @@
     </table>
     
       {{-- メッセージ編集ページへのリンク --}}
-    <a class="btn btn-outline" href="{{ route('messages.edit', $message->id) }}">このメッセージを編集</a>
+    <a class="btn btn-outline" href="{{ route('tasks.edit', $message->id) }}">このメッセージを編集</a>
     
      {{-- メッセージ削除フォーム --}}
-    <form method="POST" action="{{ route('messages.destroy', $message->id) }}" class="my-2">
+    <form method="POST" action="{{ route('tasks.destroy', $message->id) }}" class="my-2">
         @csrf
         @method('DELETE')
         
